@@ -1,0 +1,111 @@
+/* Text */
+
+.title {
+    @apply text-2xl font-bold
+}
+
+.text-darkest {
+    @apply text-gray-900 dark:text-gray-50
+}
+
+.text-darker {
+    @apply text-gray-700 dark:text-gray-100
+}
+
+.text-dark {
+    @apply text-gray-600 dark:text-gray-200
+}
+
+.text-brand {
+    @apply text-primary-500 dark:text-primary-400
+}
+
+.text-light {
+    @apply text-gray-500 dark:text-gray-300
+}
+
+.text-lighter {
+    @apply text-gray-400 dark:text-gray-400
+}
+
+.text-lightest {
+    @apply text-gray-300 dark:text-gray-500
+}
+
+.text-status-success {
+    @apply text-green-600 dark:text-green-500
+}
+
+.text-status-danger {
+    @apply text-red-500 dark:text-red-400
+}
+
+.text-status-warning {
+    @apply text-yellow-600 dark:text-yellow-500
+}
+
+/* Background */
+
+.bg-container {
+    @apply bg-gray-50 dark:bg-gray-900
+}
+
+.bg-card {
+    @apply bg-white dark:bg-gray-800
+}
+
+/* Border */
+
+.border-container {
+    @apply border-gray-200 dark:border-gray-700
+}
+
+.border-card {
+    @apply border-gray-100 dark:border-gray-600
+}
+
+/* Badge */
+
+.badge-status-success-bg {
+    @apply bg-green-50 dark:bg-green-700
+}
+
+.badge-status-success-text {
+    @apply text-green-600 dark:text-green-300
+}
+
+.badge-status-warning-bg {
+    @apply bg-yellow-50 dark:bg-yellow-700
+}
+
+.badge-status-warning-text {
+    @apply text-yellow-600 dark:text-yellow-300
+}
+
+.badge-status-danger-bg {
+    @apply bg-red-50 dark:bg-red-700
+}
+
+.badge-status-danger-text {
+    @apply text-red-600 dark:text-red-300
+}
+
+.badge-status-default-bg {
+    @apply bg-primary-50 dark:bg-primary-700
+}
+
+.badge-status-default-text {
+    @apply text-primary-600 dark:text-primary-300
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
