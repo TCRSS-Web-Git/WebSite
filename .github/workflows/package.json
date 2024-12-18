@@ -1,0 +1,31 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "latest",
+    "@nuxt/eslint": "^0.6.0",
+    "@nuxt/ui": "^2.18.7",
+    "@nuxtjs/google-fonts": "^3.2.0",
+    "@nuxtjs/i18n": "^8.5.5",
+    "date-fns": "^2.30.0",
+    "nuxt": "^3.13.2",
+    "nuxt-bugsnag": "^7.0.0"
+  },
+  "dependencies": {
+    "gsap": "^3.12.5",
+    "swiper": "^11.1.14",
+    "v-calendar": "^3.1.2",
+    "vue-tel-input": "^9.2.0",
+    "zod": "^3.23.8"
+  }
+}
