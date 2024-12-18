@@ -1,0 +1,3 @@
+.prose iframe {
+    @apply !w-full !h-auto max-w-[480px] min-h-[320px] mr-6;
+}
