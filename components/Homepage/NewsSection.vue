@@ -56,7 +56,7 @@ const {data: newsLists} = await useApiFetch<Collection<Blog>>('/public/blogs', {
               </div>
             </div>
           </div>
-          <div class="flex gap-6">
+          <div class="grid grid-cols-4 gap-6">
             <NewsCard
                 v-for="news in newsLists?.data.slice(4,10)"
                 :key="news.id"
