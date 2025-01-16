@@ -22,8 +22,8 @@ const {data: careers} = await useApiFetch<Collection<Career>>('/public/careers',
   <div>
     <!-- top banner-->
     <div
-        class="bg-cover bg-center flex items-center justify-center"
-        style="background-image: url('/careers/top-banner.jpeg');background-position:50% 50%;"
+        class="bg-cover bg-top flex items-center justify-center"
+        style="background-image: url('/careers/top-banner-5.jpg');"
     >
       <UContainer class="grid lg:grid-cols-2 my-16 lg:my-28">
         <div/>
