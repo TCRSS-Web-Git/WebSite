@@ -32,6 +32,7 @@ export default {
 
     major_shareholders: 'กลุ่มผู้ถือหุ้นรายใหญ่',
     ratio: 'สัดส่วนการถือหุ้นร้อยละ',
+    major_shareholders_percent: '',
     sahaviriya_steel: 'บริษัท สหวิริยาสตีลอินดัสตรี จำกัด (มหาชน)',
     jfe_steel: 'บริษัท เจเอฟอี สตีล คอร์ปอเรชั่น',
     marubeni_steel: 'บริษัท มารูเบนิ – อีโตชู สตีล อินช์',
@@ -61,10 +62,10 @@ export default {
     members: {
       mr_yongyuth_malithong: 'นายยงยุทธ มลิทอง',
       mr_yusuke_kawamoto: 'นายยูสุเกะ คาวาโมโตะ',
-      mr_veerawit_tulalamba: 'นายวีระวิทย์ ดุละลัมพะ',
+      mr_manin_inprom: 'นายมนินทร์ อินทร์พรหม',
       mr_hiroshi_nakano: 'นายฮิโรชิ นากาโนะ',
       mr_manop_yodeiam: 'นายมานพ ยอดเอี่ยม',
-      mr_peerapat_tuambamrung: 'นายพีระภัทร์ ท้วมบำรุง',
+      mr_pornthep_hongdilokkul: 'นายพรเทพ หงษ์ดิลกกุล',
       mr_rawi_kumduongdaow: 'นายรวิ คำดวงดาว',
       mr_ken_okutsu: 'นายเคน โอคุทสึ',
     },
@@ -73,6 +74,7 @@ export default {
       executive_vice_president_sales_and_marketing: 'รองกรรมการผู้จัดการใหญ่ สายการขายและการตลาด',
       executive_vice_president_general_administration: 'รองกรรมการผู้จัดการใหญ่ สายบริหารทั่วไป',
       director: 'กรรมการ',
+      executive_vice_president_finance_and_accounting: 'รองกรรมการผู้จัดการใหญ่ สายการเงิน และบัญชีและรองกรรมการผู้จัดดการใหญ่ สายจัดหาวัตถุดิบ',
       vice_president_manufacturing: 'ผู้ช่วยกรรมการผู้จัดการใหญ่ สายการผลิต',
       vice_president_sales_and_marketing: 'ผู้ช่วยกรรมการผู้จัดการใหญ่ สายการขายและการตลาด',
       vice_president_finance_and_accounting: 'ผู้ช่วยกรรมการผู้จัดการใหญ่ สายการเงินและบัญชี',

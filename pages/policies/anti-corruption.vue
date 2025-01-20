@@ -8,7 +8,7 @@ const {locale} = useI18n()
 
     <div v-if="locale==='en'">
       <div class="text-sm lg:text-base font-bold">
-        message From The President
+        Anti-Corruption
       </div>
 
       <div class="paragraph">

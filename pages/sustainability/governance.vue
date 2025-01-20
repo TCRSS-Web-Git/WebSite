@@ -44,31 +44,45 @@ useHead({
       <span class="text-title col-span-1">{{ $t('governance.risk.title') }}</span>
       <span class="text-description col-span-2">{{$t('governance.risk.description')}}</span>
     </div>
+    <UDivider class="py-10"/>
+    <div class="grid lg:grid-cols-3 gap-x-36">
+      <span class="text-title col-span-1">{{ $t('governance.delivery.title') }}</span>
+      <span class="text-description col-span-2">{{$t('governance.delivery.description')}}</span>
+    </div>
+    <UDivider class="py-10"/>
+    <div class="grid lg:grid-cols-3 gap-x-36">
+      <span class="text-title col-span-1">{{ $t('governance.internal.title') }}</span>
+      <span class="text-description col-span-2">{{$t('governance.internal.description')}}</span>
+    </div>
   </UContainer>
 
-    <div
-        class="bg-cover bg-center flex items-center justify-center"
-        style="background-image: url('/sustainability/governance/footer.png')"
-    >
-      <UContainer class="w-full py-28">
-        <div class="grid lg:grid-cols-2 gap-6">
-          <div
-              class="p-8 lg:p-12 rounded-xl bg-gray-400/40 backdrop-blur-md">
-            <div class="flex flex-col items-start text-white gap-4 lg:gep-6">
-              <span class="text-title">{{ $t('governance.delivery.title') }}</span>
-              <span class="text-description">{{$t('governance.delivery.description')}}</span>
-            </div>
-          </div>
-          <div
-              class="p-8 lg:p-12 rounded-xl bg-gray-400/40 backdrop-blur-md">
-            <div class="flex flex-col items-start text-white gap-4 lg:gep-6">
-              <span class="text-title">{{ $t('governance.internal.title') }}</span>
-              <span class="text-description">{{$t('governance.internal.description')}}</span>
-            </div>
-          </div>
-        </div>
-      </UContainer>
-    </div>
+  <div class="bg-cover bg-center w-full h-48 lg:h-96">
+    <img class="w-full h-full object-cover" src="/sustainability/governance/footer.png" alt="governance">
+  </div>
+
+<!--    <div-->
+<!--        class="bg-cover bg-center flex items-center justify-center"-->
+<!--        style="background-image: url('/sustainability/governance/footer.png')"-->
+<!--    >-->
+<!--      <UContainer class="w-full py-28">-->
+<!--        <div class="grid lg:grid-cols-2 gap-6">-->
+<!--          <div-->
+<!--              class="p-8 lg:p-12 rounded-xl bg-gray-400/40 backdrop-blur-md">-->
+<!--            <div class="flex flex-col items-start text-white gap-4 lg:gep-6">-->
+<!--              <span class="text-title">{{ $t('governance.delivery.title') }}</span>-->
+<!--              <span class="text-description">{{$t('governance.delivery.description')}}</span>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--          <div-->
+<!--              class="p-8 lg:p-12 rounded-xl bg-gray-400/40 backdrop-blur-md">-->
+<!--            <div class="flex flex-col items-start text-white gap-4 lg:gep-6">-->
+<!--              <span class="text-title">{{ $t('governance.internal.title') }}</span>-->
+<!--              <span class="text-description">{{$t('governance.internal.description')}}</span>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </UContainer>-->
+<!--    </div>-->
 
 </div>
 </template>

@@ -2,7 +2,7 @@ export default {
     home: {
         header:{
             label: 'The first producer and excellent cold rolled mill for all customers and a contributor to society',
-            description: 'TCRSS is proud to be the first manufacturer in Thailand to produce superior quality cold rolled steel sheets. Our products perfectly reflect TCRSS\'s total commitment to excellence in quality using world-class technological resources.',
+            description: 'TCRSS is proud to be the first manufacturer in Thailand to produce superior quality cold rolled steel sheets. Our products perfectly reflect TCRSS\'s total commitment to excellence in quality using world-class technological resources. TCRSS has strived for the achievement of best practice, good corporate governance, transparency, the benefits of society and responsibility towards community.',
             button: 'Explore About Us'
         },
 
