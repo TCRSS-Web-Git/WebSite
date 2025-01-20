@@ -28,17 +28,17 @@ const shareHolders = [
   {
     icon: '/about-us/company-profile/logo-sahaviriya-steel-industries-min.png',
     name: 'company_profile.sahaviriya_steel',
-    percents: '35.19%',
+    percents: '35.19',
   },
   {
     icon: '/about-us/company-profile/logo-jfe-holdings-company-min.png',
     name: 'company_profile.jfe_steel',
-    percents: '34.47%',
+    percents: '34.47',
   },
   {
     icon: '/about-us/company-profile/logo-marubeni-min.png',
     name: 'company_profile.marubeni_steel',
-    percents: '25.10%',
+    percents: '25.10',
   },
 ]
 </script>
@@ -148,7 +148,7 @@ const shareHolders = [
               <div class="flex flex-col items-center text-center">
                 <span class="shareholders-name">{{ $t(shareHolder.name) }}</span>
                 <span class="shareholders-percent">
-                  {{$t('company_profile.ratio') }} {{ shareHolder.percents }}
+                  {{$t('company_profile.ratio') }} {{ shareHolder.percents }} {{ $t('company_profile.major_shareholders_percent') }}
                 </span>
               </div>
             </div>

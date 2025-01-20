@@ -22,15 +22,15 @@ const leaders = [
   },
   {
     id: 3,
-    image: '/about-us/executive-management/Veerawit-Tulalamba.png',
-    name: computed(() => t('executive_management.members.mr_veerawit_tulalamba')),
+    image: '/about-us/executive-management/Manin-Inprom.png',
+    name: computed(() => t('executive_management.members.mr_manin_inprom')),
     role: computed(() => t('executive_management.position.executive_vice_president_general_administration')),
   },
   {
     id: 4,
     image: '/about-us/board-of-director/Hiroshi-Nakano.png',
     name: computed(() => t('executive_management.members.mr_hiroshi_nakano')),
-    role: computed(() => t('executive_management.position.director')),
+    role: computed(() => t('executive_management.position.executive_vice_president_finance_and_accounting')),
   },
   {
     id: 5,
@@ -40,8 +40,8 @@ const leaders = [
   },
   {
     id: 6,
-    image: '/about-us/executive-management/Peerapat-Tuambamrung.png',
-    name: computed(() => t('executive_management.members.mr_peerapat_tuambamrung')),
+    image: '/about-us/executive-management/Pornthep-Hongdilokkul.png',
+    name: computed(() => t('executive_management.members.mr_pornthep_hongdilokkul')),
     role: computed(() => t('executive_management.position.vice_president_sales_and_marketing')),
   },
   {

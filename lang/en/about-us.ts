@@ -32,6 +32,7 @@ export default {
 
     major_shareholders: 'Major Shareholders',
     ratio: '', // be blank
+    major_shareholders_percent: '%',
     sahaviriya_steel: 'Sahaviriya Steel Industries Public Company Limited',
     jfe_steel: 'JFE Steel Corporation',
     marubeni_steel: 'Marubeni – Itochu Steel Inc.',
@@ -61,9 +62,10 @@ export default {
     members: {
       mr_yongyuth_malithong: 'Mr. Yongyuth Malithong',
       mr_yusuke_kawamoto: 'Mr. Yusuke Kawamoto',
-      mr_veerawit_tulalamba: 'Mr. Veerawit Tulalamba',
+      mr_manin_inprom: 'Mr. Manin Inprom',
       mr_hiroshi_nakano: 'Mr. Hiroshi Nakano',
       mr_manop_yodeiam: 'Mr. Manop Yodeiam',
+      mr_pornthep_hongdilokkul: 'Mr. Pornthep Hongdilokkul',
       mr_peerapat_tuambamrung: 'Mr. Peerapat Tuambamrung',
       mr_rawi_kumduongdaow: 'Mr. Rawi Kumduongdaow',
       mr_ken_okutsu: 'Mr. Ken Okutsu',
@@ -73,6 +75,7 @@ export default {
       executive_vice_president_sales_and_marketing: 'Executive Vice President of Sales and Marketing Division',
       executive_vice_president_general_administration: 'Executive Vice President of General Administration Division',
       director: 'Director',
+      executive_vice_president_finance_and_accounting: 'Executive Vice President of Finance and Accounting Division and Executive Vice President of HRC Procurement Division',
       vice_president_manufacturing: 'Vice President of Manufacturing Division',
       vice_president_sales_and_marketing: 'Vice President of Sales and Marketing Division',
       vice_president_finance_and_accounting: 'Vice President of Finance and Accounting Division',

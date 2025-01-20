@@ -100,7 +100,7 @@ watch(() => route.path,
             :selected-current-page="selectedCurrentPage"
         />
         <ULink :to="localePath('/')">
-          <img alt="LOGO" class="logo h-8 lg:h-10 w-8 lg:w-10" src="/logo-tcrss.png">
+          <img alt="LOGO" class="logo h-8 lg:h-12 w-8 lg:w-12" src="/logo-tcrss.png">
         </ULink>
       </div>
       <div class="hidden lg:block">
