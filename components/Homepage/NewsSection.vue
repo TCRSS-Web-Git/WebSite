@@ -49,7 +49,10 @@ const {data: newsLists} = await useApiFetch<Collection<Blog>>('/public/blogs', {
                         <span class="text-downriver-950">{{ news.tags[0] }}</span>
                         <span class="text-gray-700">|</span>
                       </div>
-                      <span class="text-gray-700">{{ formatLongDate(news.updated_at) }}</span>
+                      <div class="flex gap-2">
+                        <span class="text-gray-700 font-bold">{{ $t('news.posted_date') }}</span>
+                        <span class="text-gray-700">{{ formatLongDate(news.updated_at) }}</span>
+                      </div>
                     </div>
                   </div>
                 </NuxtLink>
