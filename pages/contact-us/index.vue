@@ -115,7 +115,11 @@ const onSubmit = async () => {
     </div>
   </UContainer>
 
-  <GetInTouchBanner />
+  <!--  <GetInTouchBanner />-->
+  <div
+      class="bg-cover bg-right-bottom py-8 lg:py-20 h-[25rem]"
+      style="background-image: url('/contact-us/bg-get-in-touch-2.jpg'); box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3);background-position: 0% 75%;"
+  />
 
   <div class="mt-6 mb-10 lg:mt-10 lg:mb-24">
     <UContainer class="max-w-xl">

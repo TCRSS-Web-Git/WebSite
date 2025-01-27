@@ -74,7 +74,7 @@ export default {
       executive_vice_president_sales_and_marketing: 'รองกรรมการผู้จัดการใหญ่ สายการขายและการตลาด',
       executive_vice_president_general_administration: 'รองกรรมการผู้จัดการใหญ่ สายบริหารทั่วไป',
       director: 'กรรมการ',
-      executive_vice_president_finance_and_accounting: 'รองกรรมการผู้จัดการใหญ่ สายการเงิน และบัญชีและรองกรรมการผู้จัดดการใหญ่ สายจัดหาวัตถุดิบ',
+      executive_vice_president_finance_and_accounting: 'รองกรรมการผู้จัดการใหญ่ สายการเงินและบัญชี\n และรองกรรมการผู้จัดดการใหญ่ สายจัดหาวัตถุดิบ',
       vice_president_manufacturing: 'ผู้ช่วยกรรมการผู้จัดการใหญ่ สายการผลิต',
       vice_president_sales_and_marketing: 'ผู้ช่วยกรรมการผู้จัดการใหญ่ สายการขายและการตลาด',
       vice_president_finance_and_accounting: 'ผู้ช่วยกรรมการผู้จัดการใหญ่ สายการเงินและบัญชี',

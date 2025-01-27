@@ -4,9 +4,9 @@ export default {
         get_in_touch: 'สนใจติดต่อ',
         contact: 'ติดต่อ',
         customer_service: 'บริการหลังการขาย',
-        sales_and_marketing: 'ส่วนการขายและการตลาด',
-        hr_and_recruit: 'ฝ่ายทรัพยากรบุคคล',
-        procurement: 'ฝ่ายจัดซื้อจัดหา',
+        sales_and_marketing: 'สอบถามเกี่ยวกับสินค้า สั่งซื้อสินค้า',
+        hr_and_recruit: 'สมัครงาน หรือติดต่อฝ่ายทรัพยากรบุคคล',
+        procurement: 'เสนอขายสินค้า และบริการ',
         contact_us_directly: 'ติดต่อเราโดยตรง',
         name: {
             label: 'ชื่อ',
@@ -25,8 +25,8 @@ export default {
             placeholder: 'กรอกอีเมล',
         },
         department_type: {
-            label: 'แผนก',
-            placeholder: 'เลือกแผนก',
+            label: 'กรุณาเลือกเรื่องที่ต้องการติดต่อ',
+            placeholder: 'เรื่องที่ต้องการติดต่อ',
         },
         detail: {
             label: 'รายละเอียด',

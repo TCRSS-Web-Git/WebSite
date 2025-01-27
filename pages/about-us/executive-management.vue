@@ -22,7 +22,7 @@ const leaders = [
   },
   {
     id: 3,
-    image: '/about-us/executive-management/Manin-Inprom.png',
+    image: '/about-us/executive-management/Manin-Inprom-2.png',
     name: computed(() => t('executive_management.members.mr_manin_inprom')),
     role: computed(() => t('executive_management.position.executive_vice_president_general_administration')),
   },
@@ -40,7 +40,7 @@ const leaders = [
   },
   {
     id: 6,
-    image: '/about-us/executive-management/Pornthep-Hongdilokkul.png',
+    image: '/about-us/executive-management/Pornthep-Hongdilokkul-2.png',
     name: computed(() => t('executive_management.members.mr_pornthep_hongdilokkul')),
     role: computed(() => t('executive_management.position.vice_president_sales_and_marketing')),
   },
@@ -89,7 +89,7 @@ const leaders = [
           </div>
           <h3 class="leader-name">{{ leader.name }}</h3>
 
-          <p class="leader-position">{{ leader.role }}</p>
+          <p class="leader-position" style="white-space: pre-line;">{{ leader.role }}</p>
         </div>
       </div>
     </UContainer>
