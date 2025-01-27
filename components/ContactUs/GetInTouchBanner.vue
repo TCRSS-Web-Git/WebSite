@@ -10,14 +10,13 @@ const props = withDefaults(defineProps<Props>(), {
 })
 
 
-const imageStyle = `background-image: url('/contact-us/bg-get-in-touch.jpeg');background-position:${props.posX}% ${props.posY}%;`
 </script>
 
 <template>
   <div class="relative">
     <div
-        class="bg-cover bg-top py-8 lg:py-20"
-        style="background-image: url('/contact-us/bg-get-in-touch.jpeg'); box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3);"
+        class="bg-cover bg-right-bottom py-8 lg:py-20"
+        style="background-image: url('/contact-us/bg-get-in-touch-2.jpg'); box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3);background-position: 0% 75%;"
     >
       <div class="text-white">
       <div class="text-2xl lg:text-3xl font-bold w-full text-center mb-10">{{ $t('contact_us.get_in_touch') }}</div>
