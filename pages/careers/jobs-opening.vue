@@ -31,7 +31,7 @@ const {data: careers} = await useApiFetch<Collection<Career>>('/public/careers',
 
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-4 lg:mb-14">
         <div
-            v-for="(career, index) in careers?.data" :key="index"
+            v-for="(career, index) in careers.data" :key="index"
         >
           <CareerLongCard :career="career" class="hidden lg:block"/>
           <CareerCard :career="career" class="block lg:hidden"/>
