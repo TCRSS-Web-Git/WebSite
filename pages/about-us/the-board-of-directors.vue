@@ -28,8 +28,8 @@ const leaders = [
   },
   {
     id: 4,
-    image: '/about-us/board-of-director/Hiroshi-Saito.png',
-    name: computed(() => t('board_of_director.members.mr_hiroshi_saito')),
+    image: '/about-us/board-of-director/Toshiaki-Fujinaka.png',
+    name: computed(() => t('board_of_director.members.mr_toshiaki_fujinaka')),
     role: computed(() => t('board_of_director.position.director')),
   },
   {
@@ -40,8 +40,8 @@ const leaders = [
   },
   {
     id: 6,
-    image: '/about-us/board-of-director/Shinya-Mukai.png',
-    name: computed(() => t('board_of_director.members.mr_shinya_mukai')),
+    image: '/about-us/board-of-director/Nobuyoshi-Kariya.png',
+    name: computed(() => t('board_of_director.members.mr_nobuyoshi_kariya')),
     role: computed(() => t('board_of_director.position.director')),
   },
   {
