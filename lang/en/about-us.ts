@@ -27,8 +27,8 @@ export default {
 
     number_of_employees: 'Number of Employees',
     number_of_employees_head_office: 'Head Office (Bangkok) : 98 persons',
-    number_of_employees_factory: 'Factory : 768 persons',
-    number_of_employees_total: 'Grand Total : 866 persons (as of July 2024)',
+    number_of_employees_factory: 'Factory : 758 persons',
+    number_of_employees_total: 'Grand Total : 856 persons (as of April 2025)',
 
     major_shareholders: 'Major Shareholders',
     ratio: '', // be blank
@@ -44,9 +44,9 @@ export default {
       mr_hisanori_enoki: 'Mr. Hisanori Enoki',
       mr_yongyuth_malithong: 'Mr. Yongyuth Malithong',
       mr_narongrit_chotnuchittakul: 'Mr. Narongrit Chotnuchittakul',
-      mr_hiroshi_saito: 'Mr. Hiroshi Saito',
+      mr_toshiaki_fujinaka: 'Mr. Toshiaki Fujinaka',
       mr_shinichi_yaguchi: 'Mr. Shinichi Yaguchi',
-      mr_shinya_mukai: 'Mr. Shinya Mukai',
+      mr_nobuyoshi_kariya: 'Mr. Nobuyoshi Kariya',
       mr_hiroshi_nakano: 'Mr. Hiroshi Nakano',
       mr_chalerm_angkatip: 'Mr. Chalerm Angkatip'
     },
