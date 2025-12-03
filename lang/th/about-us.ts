@@ -67,7 +67,8 @@ export default {
       mr_manop_yodeiam: 'นายมานพ ยอดเอี่ยม',
       mr_pornthep_hongdilokkul: 'นายพรเทพ หงษ์ดิลกกุล',
       mr_rawi_kumduongdaow: 'นายรวิ คำดวงดาว',
-      mr_ken_okutsu: 'นายเคน โอคุทสึ',
+      mr_hidehiro_isobe: 'นายฮิเดฮิโระ อิโซเบะ',
+      mr_tomoyuki_shimizu: 'นายโทโมะยูกิ ชิมิสึ',
     },
     position: {
       president: 'กรรมการผู้จัดการใหญ่',
@@ -79,6 +80,7 @@ export default {
       vice_president_sales_and_marketing: 'ผู้ช่วยกรรมการผู้จัดการใหญ่ สายการขายและการตลาด',
       vice_president_finance_and_accounting: 'ผู้ช่วยกรรมการผู้จัดการใหญ่ สายการเงินและบัญชี',
       general_manager_sales_and_marketing: 'ผู้จัดการทั่วไป สายการขายและการตลาด',
+      general_manager_of_manufacturing_division: 'ผู้จัดการทั่วไป สายการผลิต',
     }
   },
 
