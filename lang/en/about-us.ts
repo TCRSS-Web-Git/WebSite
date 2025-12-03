@@ -68,7 +68,8 @@ export default {
       mr_pornthep_hongdilokkul: 'Mr. Pornthep Hongdilokkul',
       mr_peerapat_tuambamrung: 'Mr. Peerapat Tuambamrung',
       mr_rawi_kumduongdaow: 'Mr. Rawi Kumduongdaow',
-      mr_ken_okutsu: 'Mr. Ken Okutsu',
+      mr_hidehiro_isobe: 'Mr. Hidehiro Isobe',
+      mr_tomoyuki_shimizu: 'Mr. Tomoyuki Shimizu',
     },
     position: {
       president: 'President',
@@ -80,6 +81,7 @@ export default {
       vice_president_sales_and_marketing: 'Vice President of Sales and Marketing Division',
       vice_president_finance_and_accounting: 'Vice President of Finance and Accounting Division',
       general_manager_sales_and_marketing: 'General Manager of Sales and Marketing Division',
+      general_manager_of_manufacturing_division: 'General Manager of Manufacturing Division',
     }
   },
 
