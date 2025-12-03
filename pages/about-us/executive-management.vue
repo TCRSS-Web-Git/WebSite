@@ -52,9 +52,15 @@ const leaders = [
   },
   {
     id: 8,
-    image: '/about-us/executive-management/Ken-Okutsu.png',
-    name: computed(() => t('executive_management.members.mr_ken_okutsu')),
+    image: '/about-us/executive-management/Hidehiro-Isobe.png',
+    name: computed(() => t('executive_management.members.mr_hidehiro_isobe')),
     role: computed(() => t('executive_management.position.general_manager_sales_and_marketing')),
+  },
+  {
+    id: 9,
+    image: '/about-us/executive-management/Tomoyuki-Shimizu.png',
+    name: computed(() => t('executive_management.members.mr_tomoyuki_shimizu')),
+    role: computed(() => t('executive_management.position.general_manager_of_manufacturing_division')),
   },
 ]
 </script>
