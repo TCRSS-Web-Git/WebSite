@@ -3,6 +3,12 @@ import { gsap } from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
 const localePath = useLocalePath()
 
+const {data: popups} = await useApiFetch<Collection<Popup>>('/public/popups', {
+  method: 'GET',
+})
+
+const isOpenPopup = ref(false)
+
 onMounted(() => {
   gsap.registerPlugin(ScrollTrigger)
   gsap.from("#heroSection", {
@@ -59,10 +65,19 @@ onMounted(() => {
   });
 
 })
+
+watchEffect(() => {
+  if (popups.value && popups.value.data.length > 0) {
+    isOpenPopup.value = true
+  }
+})
 </script>
 
 
 <template>
+  <div v-if="popups && popups.data.length > 0">
+    <Popup v-model:image-url="popups.data[0].image.url" v-model:is-open="isOpenPopup" />
+  </div>
   <div
       class="bg-cover bg-center flex items-center justify-center bg-[url('/homepage/cover-mobile.webp')] lg:bg-[url('/homepage/cover.webp')]"
       style="background-image: url('/homepage/cover-mobile.webp')"

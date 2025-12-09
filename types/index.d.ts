@@ -243,5 +243,13 @@ declare global {
     certificate_files: Media[]
     photo: Media[]
   }
+
+  interface Popup {
+    readonly id: string
+    order: number
+    created_at: string
+    updated_at: string
+    image?: Media[]
+  }
 }
 
