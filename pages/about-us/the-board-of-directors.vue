@@ -1,5 +1,6 @@
 <script lang="ts" setup>
 import PageBanner from "~/components/PageBanner.vue";
+import {useApiFetch} from "~/composables/useApiFetch";
 
 const {t} = useI18n()
 
@@ -7,56 +8,20 @@ useHead({
   title: t('board_of_director.title'),
 })
 
-const leaders = [
-  {
-    id: 1,
-    image: '/about-us/board-of-director/Hisanori-Enoki.png',
-    name: computed(() => t('board_of_director.members.mr_hisanori_enoki')),
-    role: computed(() => t('board_of_director.position.chairman')),
-  },
-  {
-    id: 2,
-    image: '/about-us/board-of-director/Yongyuth-Malithong.png',
-    name: computed(() => t('board_of_director.members.mr_yongyuth_malithong')),
-    role: computed(() => t('board_of_director.position.director_and_president')),
-  },
-  {
-    id: 3,
-    image: '/about-us/board-of-director/Narongrit-Chotnuchittakul.png',
-    name: computed(() => t('board_of_director.members.mr_narongrit_chotnuchittakul')),
-    role: computed(() => t('board_of_director.position.director')),
-  },
-  {
-    id: 4,
-    image: '/about-us/board-of-director/Toshiaki-Fujinaka.png',
-    name: computed(() => t('board_of_director.members.mr_toshiaki_fujinaka')),
-    role: computed(() => t('board_of_director.position.director')),
-  },
-  {
-    id: 5,
-    image: '/about-us/board-of-director/Shinichi-Yaguchi.png',
-    name: computed(() => t('board_of_director.members.mr_shinichi_yaguchi')),
-    role: computed(() => t('board_of_director.position.director')),
-  },
-  {
-    id: 6,
-    image: '/about-us/board-of-director/Nobuyoshi-Kariya.png',
-    name: computed(() => t('board_of_director.members.mr_nobuyoshi_kariya')),
-    role: computed(() => t('board_of_director.position.director')),
-  },
-  {
-    id: 7,
-    image: '/about-us/board-of-director/Hiroshi-Nakano.png',
-    name: computed(() => t('board_of_director.members.mr_hiroshi_nakano')),
-    role: computed(() => t('board_of_director.position.director')),
-  },
-  {
-    id: 8,
-    image: '/about-us/board-of-director/Chalerm-Angatip.png',
-    name: computed(() => t('board_of_director.members.mr_chalerm_angkatip')),
-    role: computed(() => t('board_of_director.position.director')),
-  },
-]
+const {data} = await useApiFetch<Collection<Member>>('/public/board-directors')
+
+// Group members into hierarchy tiers (by group_order); the API already returns them
+// sorted by group_order then order.
+const tiers = computed<Member[][]>(() => {
+  const list = data.value?.data ?? []
+  const map = new Map<number, Member[]>()
+  for (const member of list) {
+    const g = member.group_order ?? 0
+    if (!map.has(g)) map.set(g, [])
+    map.get(g)!.push(member)
+  }
+  return [...map.keys()].sort((a, b) => a - b).map(k => map.get(k)!)
+})
 </script>
 <template>
   <div>
@@ -71,24 +36,27 @@ const leaders = [
       <h1 class="mb-4 lg:mb-14 title">
         {{ $t('board_of_director.title') }}
       </h1>
-      <div class="mb-12 grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-x-6 gap-y-6 lg:gap-y-12">
+
+      <div
+          v-for="(tier, tierIndex) in tiers"
+          :key="tierIndex"
+          class="mb-6 lg:mb-12 flex flex-wrap justify-left gap-x-6 gap-y-6 lg:gap-y-12"
+      >
         <div
-            v-for="(leader, index) in leaders"
+            v-for="leader in tier"
             :key="leader.id"
-            class="mb-3"
-            :class="[
-          index === 0 ? 'col-start-1 md:col-span-1 lg:col-span-3' : ''
-        ]"
+            class="w-full sm:w-80 lg:w-96"
         >
-          <div class="w-auto lg:max-w-96 lg:h-60 justify-center items-center mb-6 bg-gray-200">
+          <div class="w-full lg:h-60 flex justify-center items-center mb-6 bg-gray-200">
             <img
+                v-if="leader.image?.url"
                 :alt="leader.name"
-                :src="leader.image"
-                class="w-62 h-full mx-auto"
+                :src="leader.image.url"
+                class="h-full max-h-60 mx-auto object-contain"
             >
           </div>
           <h3 class="leader-name">{{ leader.name }}</h3>
-          <p class="leader-position">{{ leader.role }}</p>
+          <pre class="leader-position" style="white-space: pre-line;">{{ leader.position }}</pre>
         </div>
       </div>
     </UContainer>
@@ -96,14 +64,15 @@ const leaders = [
 </template>
 <style scoped>
 .title {
-  @apply text-xl lg:text-2xl font-bold text-downriver-950
+  @apply text-xl lg:text-2xl font-bold text-downriver-950;
 }
 
 .leader-name {
-  @apply text-base font-bold text-gray-500 dark:text-gray-300
+  @apply text-base font-bold text-gray-500 dark:text-gray-300;
 }
 
 .leader-position {
-  @apply text-base font-normal text-gray-500 dark:text-gray-300
+  @apply text-base font-normal text-gray-500 dark:text-gray-300;
+  font-family: inherit;
 }
 </style>
