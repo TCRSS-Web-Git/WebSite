@@ -7,12 +7,12 @@ export default defineNuxtConfig({
           src: 'https://cookiecdn.com/cwc.js',
           type: 'text/javascript'
         },
-        {
-          src: 'https://cookiecdn.com/configs/r9JnMST1m9sdxjX6sSxwBavD',
-          type: 'text/javascript',
-          id: 'cookieWow',
-          'data-cwcid': 'r9JnMST1m9sdxjX6sSxwBavD'
-        }
+        // {
+        //   src: 'https://cookiecdn.com/configs/r9JnMST1m9sdxjX6sSxwBavD',
+        //   type: 'text/javascript',
+        //   id: 'cookieWow',
+        //   'data-cwcid': 'r9JnMST1m9sdxjX6sSxwBavD'
+        // }
       ]
     },
   },
