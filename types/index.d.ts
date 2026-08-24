@@ -51,6 +51,17 @@ declare global {
 
   // Data
 
+  // Executives & Board of Directors (shared shape)
+  interface Member {
+    readonly id: string
+    name: string
+    position: string
+    order: number
+    image?: Media
+    created_at: string
+    updated_at: string
+  }
+
   interface Award {
     readonly id: string
     title: string
